@@ -1,0 +1,108 @@
+
+  .color p {
+  color:#00FF00;
+  font-style:bold;
+  font-family:courier;
+  background-color:black;
+}
+   
+
+body
+{
+background: black; 
+}
+
+
+.menu { 
+    
+
+width:100%;}
+
+
+li {
+    float: left;
+}
+
+
+/* DROPDOWN Txt Color */
+
+li a, .dropbtn {
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* DROPDOWN Txt BOX Color */
+
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+/* DROPDOWN content clr */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+/* DROPDOWN TEXT CLR */
+
+.dropdown-content a {
+    color: #00FF00;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+/* DROPDOWN COL BOX */
+.dropdown-content a:hover {
+    
+    background-color: black}
+
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+        @keyframes fade {
+        0%   { opacity: 0; }
+        11.11%   { opacity: 1; }
+        33.33%  { opacity: 1; }
+        44.44%  { opacity: 0; }
+        100% { opacity: 0; }
+}
+
+/* MENU COL */
+
+.menu { 
+ color:#00FF00;
+  font-style:bold;
+  font-family:courier;
+  background-color:black;
+    
+}
+
+
+.image1 { 
+    
+    position:ab
+    
+    }
