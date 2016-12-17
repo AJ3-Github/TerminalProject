@@ -1,2 +1,1 @@
-# my-first-website
-my first website, under development 
+© Copyright Alex James Willi 
