@@ -1,0 +1,40 @@
+	body {
+		background-color: black 
+	}
+	#console {
+		font-family: courier, monospace;
+		color: white;
+		width:750px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:100px;
+		font-size:14px;
+	}
+    #x {
+		color: red;
+	}
+    #d {
+		color: #0f0;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
+	#a {
+		color: #0f0;
+	}
+	#c {
+		color: #0bc;
+	}
+	#b {
+		color: #ff0096;
+	}
+       
+    #green {
+		color: green;
+	}
+    
+       
+    #red {
+		color: red;
+	}
