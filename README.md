@@ -1,2 +1,2 @@
-Website made using HTML,CSS & JavaScript.
+Website made using HTML,CSS, AJAX & JavaScript.
 © Copyright Alex J. Willi 
