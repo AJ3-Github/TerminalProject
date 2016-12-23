@@ -1,0 +1,15 @@
+<span id="green">
+"Remember remember the fifth of November
+Gunpowder, treason and plot.
+I see no reason why gunpowder, treason
+Should ever be forgot..."
+
+- Guy Fawkes
+
+<span>
+
+</span>
+> <a href="pathway.html">Continue
+<h2 align="left"><img src="fawkes.png" alt="Mountain View" style="width:300px;height:500px;"></h2>
+
+> <a href="leibniz.html">Return...
