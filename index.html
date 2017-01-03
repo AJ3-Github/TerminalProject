@@ -1,5 +1,8 @@
 <html> 
-<head> <title>Mona Lisa by Leonardo Da Vinci</title> 
+<head>
+ <title>Mona Lisa by Leonardo Da Vinci</title> 
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+ <link rel="stylesheet" type="text/css" href="style.css">
  <link rel="shortcut icon" type="image/png" href="mona.jpeg"> 
  <meta charset='UTF-8'>
  <meta name='url' content='http://www.cicerosweb.com/index.html'>
@@ -11,60 +14,10 @@
  <meta name='robots' content='index,follow'>
  <meta name='revised' content='Sunday, 1st of Jan, 2017, 17:00 pm'>
  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
-<style type="text/css"> 
-    
-	body {
-		background-color: black 
-	} 
-	#console {
-		font-family: courier, monospace;
-		color: #0f0;
-		width:750px;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:100px;
-		font-size:14px;
-	}
-    #x {
-		color: red;
-	}
-    #d {
-		color: #0f0;
-	}
-	a {
-		color: #0f0;
-		text-decoration: none;
-	}
-	#a {
-		color: #0f0;
-	}
-	#c {
-		color: firebrick;
-	}
-	#b {
-		color: #ff0096;
-	}
-       
-    #green {
-		color: #0f0;
-	}
-       
-    pre {
-		color: #0f0;
-	}
-       
-    #red {
-		color: red;
-	}
-    
-</style> 
 </head> 
+    
 <body> 
-    
-    
-<div id="clockbox" align="right" style="font:14px courier; color:#0f0;">
+<div id="clockbox" align="right" style="font:11px courier; color:#0f0;">
 <script type="text/javascript">
 tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
 tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
@@ -92,7 +45,9 @@ setInterval(GetClock,1000);
 }
 </script>
 </div>
-    
+
+<div id="console" align="center"></div> 
+
 <script type="text/javascript"> 
 	var Typer={
 	text: null,
@@ -180,15 +135,9 @@ setInterval(GetClock,1000);
 		}
 	},
  
-	updLstChr:function(){ // blinking cursor
-		var cont=this.content(); // get console 
-		if(cont.substring(cont.length-1,cont.length)=="|") // if last char is the cursor
-			$("#console").html($("#console").html().substring(0,cont.length-1)); // remove it
-		else
-			this.write("|"); // else write it
-	}
+	
 }
- 
+  
 function replaceUrls(text) {
 	var http = text.indexOf("http://");
 	var space = text.indexOf(".me ", http);
@@ -199,7 +148,7 @@ function replaceUrls(text) {
 	return text
 }
 }
-Typer.speed=20;
+Typer.speed=80;
 Typer.file="index.txt";
 Typer.init();
  
@@ -212,7 +161,7 @@ function t() {
 }
     
 </script> 
-<div id="console"></div> 
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -226,6 +175,5 @@ function t() {
   })();
 
 </script>
-    
 </body> 
 </html> 
