@@ -1,56 +1,53 @@
-
 <html> 
-<head> 
-<title>Gottfried Leibniz</title> 
-     <link rel="shortcut icon" type="image/png" href="wilhelm.jpeg"/> 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-<style type="text/css"> 
-	body {
-		background-color: black 
-	}
-	#console {
-		font-family: courier, monospace;
-		color: green;
-		width:750px;
-		margin-left:auto;
-		margin-right:auto;
-		margin-top:100px;
-		font-size:14px;
-	}
-    #x {
-		color: red;
-	}
-    #d {
-		color: #0f0;
-	}
-	a {
-		color: green;
-		text-decoration: none;
-	}
-	#a {
-		color: #0f0;
-	}
-	#c {
-		color: firebrick;
-	}
-	#b {
-		color: #ff0096;
-	}
-       
-    #green {
-		color: green;
-	}
-       
-    pre {
-		color: green;
-	}
-       
-    #red {
-		color: red;
-	}
-</style> 
+<head>
+ <title>Gottfried Wilhelm Leibniz</title> 
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="shortcut icon" type="image/png" href="wilhelm.jpeg"> 
+ <meta charset='UTF-8'>
+ <meta name='url' content='http://www.cicerosweb.com/index.html'>
+ <meta name='keywords' content='Gottfried Wilhelm Leibniz, Binary'>
+ <meta name='owner' content='a3j'>
+ <meta name='author' content='a3j, https://github.com/a3j'>
+ <meta name='copyright' content='a3j'>
+ <meta name='language' content='EN'>
+ <meta name='robots' content='leibniz,follow'>
+ <meta name='revised' content='Sunday, 1st of Jan, 2017, 17:00 pm'>
+ <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 </head> 
-<body> 
+    
+<body>  
+<div id="clockbox" align="right" style="font:11px courier; color:#0f0;">
+<script type="text/javascript">
+ tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+ tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+ function GetClock(){
+ var d=new Date();
+ var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+ if(nyear<1000) nyear+=1900;
+ var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+ if(nhour==0){ap=" AM";nhour=12;}
+ else if(nhour<12){ap=" AM";} 
+ else if(nhour==12){ap=" PM";}
+ else if(nhour>12){ap=" PM";nhour-=12;}
+
+ if(nmin<=9) nmin="0"+nmin;
+ if(nsec<=9) nsec="0"+nsec;
+
+ document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+ }
+
+ window.onload=function(){
+ GetClock();
+ setInterval(GetClock,1000);
+ }
+</script>
+</div>
+
+<div id="console" align="left"></div> 
+    
 <script type="text/javascript"> 
 	var Typer={
 	text: null,
@@ -157,7 +154,7 @@ function replaceUrls(text) {
 	return text
 }
 }
-Typer.speed=20;
+Typer.speed=70;
 Typer.file="leibniz.txt";
 Typer.init();
  
@@ -168,9 +165,9 @@ function t() {
 		clearInterval(timer);
 	}
 }
- 
+    
 </script> 
-<div id="console"></div> 
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -184,7 +181,5 @@ function t() {
   })();
 
 </script>
-    
-    
 </body> 
 </html> 
