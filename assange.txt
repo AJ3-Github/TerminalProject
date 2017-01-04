@@ -2,6 +2,6 @@
 <div class="lol5" align="center">
 <img src="julianassange.jpeg" alt="Mountain View" style="width:600px;height:500px;">
 </div>
-
+<!---Dead---->
 > Julian Assange
 > <a href="pathway.html">Back</a></span>
