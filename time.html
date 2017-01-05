@@ -1,0 +1,67 @@
+<html> 
+<head>
+ <title>Mona Lisa by Leonardo Da Vinci</title> 
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="shortcut icon" type="image/png" href="mona.jpeg"> 
+ <meta charset='UTF-8'>
+ <meta name='url' content='http://www.cicerosweb.com/index.html'>
+ <meta name='keywords' content='Mona Lisa, Leonardo Da Vinci, ASCII Art'>
+ <meta name='owner' content='a3j'>
+ <meta name='author' content='a3j, https://github.com/a3j'>
+ <meta name='copyright' content='a3j'>
+ <meta name='language' content='EN'>
+ <meta name='robots' content='index,follow'>
+ <meta name='revised' content='Sunday, 1st of Jan, 2017, 17:00 pm'>
+ <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+</head> 
+    
+<body> 
+
+
+<script>
+$(document).ready(function(){
+var s=window.screen;
+var width = q.width=s.width;
+var height = q.height;
+var yPositions = Array(300).join(0).split('');
+var ctx=q.getContext('2d');
+ 
+var draw = function () {
+  ctx.fillStyle='rgba(0,0,0,.05)';
+  ctx.fillRect(0,0,width,height);
+  ctx.fillStyle='#0F0';
+  ctx.font = '10pt Georgia';
+  yPositions.map(function(y, index){
+    text = String.fromCharCode(1e2+Math.random()*33);
+    x = (index * 10)+10;
+    q.getContext('2d').fillText(text, x, y);
+	if(y > 100 + Math.random()*1e4)
+	{
+	  yPositions[index]=0;
+	}
+	else
+	{
+      yPositions[index] = y + 10;
+	}
+  });
+};
+RunMatrix();
+function RunMatrix()
+{
+if(typeof Game_Interval != "undefined") clearInterval(Game_Interval);
+		Game_Interval = setInterval(draw, 33);
+}
+function StopMatrix()
+{
+clearInterval(Game_Interval);
+}
+//setInterval(draw, 33);
+$("button#pause").click(function(){
+StopMatrix();});
+$("button#play").click(function(){RunMatrix();});
+ 
+})
+</script>
+</body> 
+</html> 
