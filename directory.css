@@ -1,0 +1,21 @@
+    body {
+		background-color: black
+	} 
+	#console {
+		font-family: courier, monospace;
+		color: deepskyblue;
+		width:750px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:5px;
+		font-size:15px;
+        text-shadow: 0 0 10px blue;
+	}
+   
+	a {
+		color:  deepskyblue;
+		text-decoration: none;
+	}       
+#c {
+    color: deepskyblue;
+}
