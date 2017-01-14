@@ -1,0 +1,9 @@
+<div class="anon1" align="left">
+<img src="hej2.gif" alt="Heartbeat Monoitor" style="width:700px;height:400px;">
+<div class="c" align="left">
+<a href="index.html">➤ Home</a>
+➤ Kali Linux Guide
+➤ ArduinUno Guide
+<a href="tor.html">➤ The Onion Router Project
+<a href="https.html">➤ Hyper Text Transfer Protocol
+</div> 
